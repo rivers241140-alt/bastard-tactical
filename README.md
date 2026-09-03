@@ -6,7 +6,7 @@ Live shop site for **Bastard Tactical** — home-based Type 07 FFL and gunsmith 
 
 ## What this site is
 
-Static single-page shop page: services (prepaid local FFL transfer $25 plus tax, gunsmith packages, custom builds, 3D print on demand, ammo), how appointments work, about, and contact.
+Static single-page shop site: services (prepaid local FFL transfer $25 plus tax, gunsmith packages, custom builds, 3D print on demand, ammo), how appointments work, about, and contact.
 
 ## Files
 
