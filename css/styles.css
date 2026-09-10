@@ -771,6 +771,112 @@ button:focus-visible,
   font-size: 0.98rem;
 }
 
+/* ----- Merch ----- */
+.merch-kicker {
+  margin: 0 0 1rem;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 0.92rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.55rem 1rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--stroke);
+}
+
+.merch-kicker::before {
+  content: "";
+  width: 1.15rem;
+  height: 2px;
+  background: var(--red);
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.merch-kicker--sub {
+  margin-top: 2rem;
+}
+
+.merch-kicker span {
+  font-family: var(--body);
+  font-weight: 400;
+  font-size: 0.95rem;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--dim);
+}
+
+.merch-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+.product {
+  padding: 0;
+}
+
+.product__art {
+  background: #080809;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--stroke);
+}
+
+.product__art--wide {
+  aspect-ratio: 16 / 9;
+  background: #111113;
+}
+
+.product__art img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.product__art--wide img {
+  object-fit: cover;
+}
+
+.product__body {
+  padding: 1.25rem 1.3rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.product h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.55rem;
+}
+
+.product__body p {
+  margin: 0 0 1.1rem;
+  flex: 1 1 auto;
+}
+
+.product__body strong {
+  color: var(--text);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.product .btn {
+  width: 100%;
+}
+
+.merch-note {
+  margin: 1.25rem 0 0;
+  color: var(--dim);
+  font-size: 0.98rem;
+}
+
 /* ----- Footer ----- */
 .site-footer {
   position: relative;
@@ -852,6 +958,10 @@ button:focus-visible,
     grid-template-columns: 1fr 1fr;
   }
 
+  .merch-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .site-footer .wrap {
     grid-template-columns: 1fr auto;
     align-items: end;
@@ -897,7 +1007,7 @@ button:focus-visible,
 }
 
 /* ----- Mobile nav ----- */
-@media (max-width: 819px) {
+@media (max-width: 959px) {
   .nav-burger {
     display: flex;
   }
@@ -1008,7 +1118,18 @@ button:focus-visible,
   }
 }
 
-@media (max-width: 819px) {
+@media (min-width: 960px) and (max-width: 1180px) {
+  .nav {
+    gap: 0.85rem;
+  }
+
+  .nav a {
+    font-size: 0.84rem;
+    letter-spacing: 0.08em;
+  }
+}
+
+@media (max-width: 959px) {
   .header-end {
     position: static;
   }
