@@ -821,26 +821,17 @@ button:focus-visible,
 }
 
 .product__art {
-  background: #080809;
-  aspect-ratio: 1;
+  background: #1a1a1c;
+  aspect-ratio: 16 / 9;
   display: flex;
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid var(--stroke);
 }
 
-.product__art--wide {
-  aspect-ratio: 16 / 9;
-  background: #111113;
-}
-
 .product__art img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-}
-
-.product__art--wide img {
   object-fit: cover;
 }
 
